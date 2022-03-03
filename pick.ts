@@ -1,5 +1,5 @@
 //github.com/type-challenges/type-challenges/blob/master/questions/4-easy-pick/README.md
-https: type MyPick<T, K extends keyof T> = {
+type MyPick<T, K extends keyof T> = {
   [key in K]: T[key];
 };
 
@@ -15,3 +15,5 @@ const todo: TodoPreview = {
   title: "Clean room",
   completed: false,
 };
+
+export default {};
